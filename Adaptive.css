@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/*DESKTOP STYLES*/
+
+body{
+    background-color:#333;
+    font-family: Arial;
+    height: 2000px;
+}
+#navbar{
+    background-color: #111;
+
+    padding: 0 10%;
+    position: relative;
+
+}
+
+
+#navbar a {
+    color: #ddd;
+    padding: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+#navbar a.brand {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 5em;
+}
+#navbar a.toggler {
+    display: none;
+}
+/*MOBIE STYLE*/
+
+@media (max-width: 1240px) {
+    #navbar a:not(.brand) {
+        display: none;
+    }
+    #navbar a.brand {
+        padding-left: 0;
+
+    }
+    #navbar a.toggler {
+        background-color:#123;
+        display: inline-block;
+        border: 1px solid #ddd;
+        padding: 0.5em 1em;
+        position: absolute;
+        right: 10%;
+        top: 0.75em;
+        
+    }
+    #navbar:target a:not(.toggler) {
+        display: block;
+    }
+
+}
